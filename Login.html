@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            WEBSITE1
+        </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="lg.jpg.png">
+
+    </head>
+
+    <div class="banner">
+        <div class="navbar">
+            
+              
+            <ul>
+                <li><a class="active" href="#LOGIN">LOGIN</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <li><a href="#PRODUCT">PRODUCT</a></li>
+                <li><a href="index.html">HOME</a></li>
+                <img src="lg.jpg.png" class="logo">
+                
+                
+               
+    </ul>
+</div>
+
+
+
+    <body>
+        >
+        
+        <div class="con1">
+
+            <b>LOGIN</b><br><br>
+
+        <form>
+
+
+          <input type="text" id="Username" name="fname" placeholder="Username...">
+
+          <br>
+
+          
+          <input type="Password" id="Password" name="Password" placeholder="Password..." value=""
+          pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+          <br>
+          
+
+
+          <input type="submit" value="LOGIN" onclick="myfunction()">
+          <br>
+
+          <div class="bt2">
+
+          <button onclick="myFunction() ">Create Account</button>
+          <p id="demo"></p>
+
+          <a href="#">NEED HELP?</a>
+
+          </div> 
+        </div>
+        </form>
+        </div>
+
+        
+
+        <script>
+            
+
+            // When the user starts to type something inside the password field
+            myInput.onkeyup = function()
+            {
+                // Validate lowercase letters
+                var lowerCaseLetters = /[a-z]/g;
+                if(myInput.value.match(lowerCaseLetters)) {  
+                    letter.classList.remove("invalid");
+                    letter.classList.add("valid");
+                } else {
+                    letter.classList.remove("valid");
+                    letter.classList.add("invalid");
+                }
+                 // Validate capital letters
+                 var upperCaseLetters = /[A-Z]/g;
+                 if(myInput.value.match(upperCaseLetters)) {  
+                    capital.classList.remove("invalid");
+                    capital.classList.add("valid");}
+                    else {
+                        capital.classList.remove("valid");
+                        capital.classList.add("invalid");
+                    }
+
+                    // Validate numbers
+                    var numbers = /[0-9]/g;
+                    if(myInput.value.match(numbers)) {  
+                        number.classList.remove("invalid");
+                        number.classList.add("valid");
+                    } else {
+                        number.classList.remove("valid");
+                        number.classList.add("invalid");
+                    }
+                    // Validate length
+                    if(myInput.value.length >= 8) {
+                        length.classList.remove("invalid");
+                        length.classList.add("valid");
+                    } else {
+                        length.classList.remove("valid");
+                        length.classList.add("invalid");
+                    }
+                     function myFunction()
+                     {
+                        
+                        var x = document.getElementById("Password");
+                        if (x.type === "Password")
+                        {
+                            x.type = "text";
+                        }
+                        else
+                        {
+                    x.type ="Password";
+
+                    function myFunction()
+                    {
+                        var txt;
+                        if (confirm ("The Account is not Created")) 
+                        {
+                            txt = "Account is Created! " ;
+                        }
+                        document.getElementById("demo").innerHTML =txt;
+                    }
+
+                }
+            }
+        }
+        </script>
+        
+    </body>
+</div>
+</html>
